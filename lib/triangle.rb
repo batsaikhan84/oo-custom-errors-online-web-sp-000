@@ -38,8 +38,14 @@ class Triangle
   end
   
   class TriangleError < StandardError
-   # def message
-  #    "This is custom message"
-   # end
+    def message
+      "This is custom message"
+    end
   end
 end
+
+puts Triangle.new(0, 0, 0).kind
+puts Triangle.new(7, 3, 2).kind
+puts Triangle.new(2, 4, 2).kind
+puts Triangle.new(1, 1, 3).kind
+puts Triangle.new(3, 4, -5).kind
